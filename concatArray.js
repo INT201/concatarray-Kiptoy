@@ -1,10 +1,14 @@
 // const { template } = require('@babel/core')
 
 function concatArray(array1, array2) {
-  for (elem of array2) {
-    array1.push(elem)
+  newArr = [] 
+  for (elem of array1) {
+    newArr.push(elem)
   }
-  return array1
+  for (elem of array2) {
+    newArr.push(elem)
+  }
+  return newArr
 }
 
 
