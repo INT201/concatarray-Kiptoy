@@ -1,6 +1,8 @@
-const { template } = require('@babel/core')
+// const { template } = require('@babel/core')
 
 function concatArray(array1, array2) {
-  //code here
+  return array1.concat(array2)
 }
-module.exports = concatArray
+
+console.log(concatArray([5, 10, 15], [2, 4, 6, 7]))
+// module.exports = concatArray
