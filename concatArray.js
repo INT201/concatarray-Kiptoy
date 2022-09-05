@@ -1,14 +1,14 @@
 const { template } = require('@babel/core')
 
 function concatArray(array1, array2) {
-  newArr = [] 
-  for (elem of array1) {
-    newArr.push(elem)
+  if ((array1 == null || array1 == undefined) && !(array2 == null || array2 == undefined)) {
+    return array2
+  } else if (!(array1 == null || array1 == undefined) && (array2 == null || array2 == undefined)) {
+    return array1
+  } else if ((array1 == null || array1 == undefined) && (array2 == null || array2 == undefined)) {
+    return undefined
   }
-  for (elem of array2) {
-    newArr.push(elem)
-  }
-  return newArr
+  return array1.concat(array2)
 }
 
 
