@@ -8,7 +8,7 @@ function concatArray(array1, array2) {
   for (elem of array2) {
     newArr.push(elem)
   }
-  return newAr
+  return newArr
 }
 
 
